@@ -1,0 +1,472 @@
+/*
+ * Light Radius
+ * Author: Tiago Fernandes
+ * Version: 3.5
+ */
+
+/*
+ * 1.0 - Overall Styling
+ * 2.0 - Content Holders
+ * 3.0 - Page Sections
+ *      3.1 - Home
+ *      3.2 - Profile
+ *      3.3 - Skills
+ *      3.4 - Projects
+ *      3.5 - Contact
+ * 4.0 - SFX
+ * 5.0 - Media Queries
+ */
+
+/*
+ *
+ * 1.0 - Overall Styling
+ * 
+ */
+
+@charset "UTF-8";
+
+/* Real estate */
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+/* Basic font style */
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255,255,255);
+
+/* Background style */   
+    background: url(../img/spotlightpink.png) no-repeat top right fixed;
+    background-size: cover;
+
+}
+
+/* Headings, paragraphs and strongs */
+h1, h2, h3, p {
+    margin-bottom: 6px;
+    padding: 5px;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 88px;
+    margin: 16px 0;
+}
+
+h1:hover {
+    color: rgb(255,255,255);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff
+}
+
+h2 {
+    font-family: Rokkitt, serif;
+    font-weight: 400;
+    font-size: 48px;
+    
+}
+
+h3 {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Navigation bar */
+nav {
+    font-size: 16px;
+    font-weight: 700;
+    position: fixed;
+    height: 56px;
+    top: 0;
+    z-index: 99;
+    background: rgba(0,0,0,0.8);
+    white-space: nowrap;
+}
+
+.slider {
+    font-size: 16px;
+    font-weight: 700;
+    position: fixed;
+    height: 56px;
+    z-index: 99;
+}
+
+nav p {
+    margin-bottom: 0;
+}
+
+#top_menu {
+    left: -576px;
+    top: 0;
+}
+
+#top_menu:hover {
+    left: 0px;
+}
+
+#bottom_menu {
+    right: -564px;
+    bottom: 0;
+}
+
+#bottom_menu:hover {
+    right: 0px;
+}
+
+#top_menu, #top_menu .button, #top_menu .square {
+    float: left;
+}
+
+#bottom_menu, #bottom_menu .button, #bottom_menu .square {
+    float: right;
+}
+
+.s {     
+    width: 104px;
+}
+
+.m {
+    width: 188px;
+}
+
+.gray {
+    color: rgb(128,128,128);
+}
+
+.button {
+    height: 56px;
+    line-height: 44px;
+    text-align: center;
+    background: rgb(8,8,8);
+}
+
+.button:hover {
+    background: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+
+.square {
+    width: 56px;
+    height: 56px;
+    line-height: 44px;
+    text-align: center;
+    background: rgb(240,8,140);
+}
+
+#logo {
+    background: rgb(0,0,0);
+}
+
+.square img {
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Link style */
+a:link {
+    text-decoration: none;
+    color: rgb(255,0,128);
+}
+a:visited {
+    color: rgb(255,0,140);
+} 
+
+.shiny {
+    color: rgb(255,255,255);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff
+}
+
+/*
+ *
+ * 2.0 - Content Holders
+ * 
+ */
+
+
+.background {
+    min-width: 100%;
+}
+
+.wrap {
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 1em;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+/*
+ *
+ * 3.0 - Page Sections
+ * 
+ */
+
+/* 3.1 - Home */
+#home {
+    height: 100%;
+    background: url(../img/lattice2.png) repeat;
+}
+
+.splash {
+    font-size: 32px;
+    margin-bottom: 80px;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+}
+
+.box {
+    text-align: center;
+    margin: 0 8px;
+    width: 88px;
+    padding: 8px;
+}
+
+.box a {
+    color: rgb(255,255,255);
+}
+
+/* 3.2 - Profile */
+#profile {
+    text-shadow: 0px 0px white;
+}
+
+#profile .content a:hover {
+    color: #0ce3ac;
+}
+
+#profile img {
+    float: left;
+    margin: 0;
+}
+
+#picture img {
+    height: 100%;
+}
+
+#background #ribbon{
+    text-align: center;
+}
+
+#background .box {
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+#background .fa {
+    display: block;
+}
+
+/* 3.3 - Skills */
+#skills {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#skills table td {
+    vertical-align: top;
+    width: 20%;
+    padding: 2vw;
+    font-size: 0.8em;
+}
+
+.display {
+    max-width: 900px;
+    margin: auto;
+}
+
+.badge {
+    position: relative;
+    margin: 8px;
+    
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(0,0,0,0.3)), color-stop(1, rgba(0,0,0,0.3)));
+    background: -moz-linear-gradient(center top, rgba(0,0,0,0) 5%, rgba(0,0,0,0.3) 100%);
+    background-color: rgba(33,33,33,0.3);
+    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 10px;
+    
+    text-indent: 0;
+    display: inline-block;
+    color:white;
+    font-size: 17px;
+    height: 7em;
+    line-height: 6em;
+    width: 7em;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+    cursor: default;
+}
+
+/* 3.4 - Projects */
+#projects {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#showcase {
+    display: inline-block;
+    max-width: 100%;    
+}
+
+.display {
+    display: inline-block;
+    max-width: 100%;
+}
+
+#projects img {
+    max-width: 500px;
+    max-height: 100%;
+}
+
+/* 3.5 - Contact */
+#contact {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#credit {
+    font-size: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*
+ *
+ * 4.0 - SFX
+ * 
+ */
+
+/* Smooth Transitions */
+.smooth {
+    -webkit-transition: all 0.8s ease-in-out; /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.8s ease-in-out; /* Firefox 4-15 */
+    -o-transition: all 0.8s ease-in-out; /* Opera */
+    transition: all 0.8s ease-in-out; /* Chrome 26+, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+#arrow {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+/* Fades */
+.fade-in {
+    position: relative;
+    top: 0;
+}
+
+.badge, .display, #picture, .contact {
+    visibility: hidden;
+}
+
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
+    visibility: visible;
+}
+
+.delay-01s {animation-delay: 0.1s; -webkit-animation-delay: 0.1s;}
+.delay-02s {animation-delay: 0.2s; -webkit-animation-delay: 0.2s;}
+.delay-03s {animation-delay: 0.3s; -webkit-animation-delay: 0.3s;}
+.delay-04s {animation-delay: 0.4s; -webkit-animation-delay: 0.4s;}
+.delay-05s {animation-delay: 0.5s; -webkit-animation-delay: 0.5s;}
+.delay-06s {animation-delay: 0.6s; -webkit-animation-delay: 0.6s;}
+.delay-07s {animation-delay: 0.7s; -webkit-animation-delay: 0.7s;}
+.delay-08s {animation-delay: 0.8s; -webkit-animation-delay: 0.8s;}
+.delay-09s {animation-delay: 0.9s; -webkit-animation-delay: 0.9s;}
+.delay-1s {animation-delay: 1s; -webkit-animation-delay: 1s;}
+.delay-15s {animation-delay: 1.5s; -webkit-animation-delay: 1.5s;}
+
+/*
+ *
+ * 5.0 - MEDIA QUERIES
+ * 
+ */
+
+/* Height */
+@media screen and (max-height: 745px) {
+	
+}
+
+@media screen and (max-height: 675px) {
+	
+}
+
+/* Width */
+@media screen and (max-width: 1600px) {
+	
+}
+
+@media screen and (max-width: 1365px) {
+
+}
+
+@media screen and (max-width: 1180px) {
+
+}
+
+@media screen and (max-width: 960px) {
+    
+}
+
+@media screen and (max-width: 860px) {   
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+}
