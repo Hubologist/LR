@@ -42,7 +42,52 @@
         <script src="js/typed.js"></script>
         <script src="js/main.js"></script>    
     </head>
+    
     <body>
+        	<div
+            class="parallax-image-wrapper parallax-image-wrapper-100"
+            data-anchor-target="#projects + .gap"
+            data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+            data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+            <div
+                class="parallax-image parallax-image-100"
+                style="background-image:url(img/mmarketing.png)"
+                data-anchor-target="#projects + .gap"
+                data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+                data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+            </div>
+		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+	</div>
+
+	<div
+            class="parallax-image-wrapper parallax-image-wrapper-100"
+            data-anchor-target="#project"
+            data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+            data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-100"
+			style="background-image:url(img/proverbial.png)"
+			data-anchor-target="#projects + .gap"
+			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#projects"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/unfold.png)"
+			data-anchor-target="#projects"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
         <div class="smooth slider" id="top_menu">
             <div class="square" id="logo">
                 <img alt="logo" src="img/bulb.png"/>
@@ -160,8 +205,11 @@
             <div class="content">
                 <h2>
                     Current projects
-                </h2>        
+                </h2>
             </div>
+                <div class="gap gap-100" style="background-image: url(img/mmarketing.png);"></div>
+                <div class="gap gap-100" style="background-image: url(img/proverbial.png);"></div>
+		<div class="gap gap-50" style="background-image: url(img/unfold.png);"></div>
         </div>
         <div id="contact" class="wrap">
             <div class="content">
