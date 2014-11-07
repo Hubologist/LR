@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //Force reload at top
-    $(this).scrollTop(0);
+    //$(this).scrollTop(0);
     
     //Basic Home animations
     $('.box').addClass('animated fadeInUp');
