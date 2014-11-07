@@ -12,8 +12,8 @@ $(document).ready(function() {
       	$("#typed").typed({
 		strings: [
                     "Consistent web design, from concept, to paper, to reality.",
-                    "Content creation, marketing consultancy, web development.",
-                    "Beautiful business plans and presentations."],
+                    "Content creation, marketing consultancy, web development."
+                ],
                 startDelay: 1100,
 		typeSpeed: 50,
                 loop: true
@@ -26,14 +26,7 @@ $(document).ready(function() {
     setInterval(function() {
             $arrow.toggleClass('animated bounce');
     }, 4400);
-                
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) { //use `this`, not `document`
-            $('#arrow').css({
-                'display': 'none'
-            });
-        }
-    });
+
 
 /*
  * Smooth transitions inside page

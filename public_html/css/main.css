@@ -23,27 +23,25 @@
  * 
  */
 
-@charset "UTF-8";
+@charset "utf-8";
 
 /* Real estate */
-html {
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
-    
-/* Basic font style */
+    /* Basic font style */
     font-family: 'Lato', Calibri, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: rgb(255,255,255);
 
-/* Background style */   
+    /* Background style */   
     background: url(../img/spotlightpink.png) no-repeat top right fixed;
     background-size: cover;
 
@@ -58,7 +56,7 @@ h1, h2, h3, p {
 h1 {
     font-family: Monoton;
     font-size: 88px;
-    margin: 16px 0;
+    margin: 0;
 }
 
 h1:hover {
@@ -72,7 +70,6 @@ h2 {
     font-family: Rokkitt, serif;
     font-weight: 400;
     font-size: 48px;
-    
 }
 
 h3 {
@@ -202,18 +199,12 @@ a:visited {
  * 
  */
 
-
-.background {
-    min-width: 100%;
-}
-
 .wrap {
-    padding: 32px;
     margin: 0 auto;
 }
 
 .content {
-    padding: 1em;
+    padding: 56px;
 }
 
 .white {
@@ -234,8 +225,8 @@ a:visited {
 }
 
 .splash {
+    margin: 40px 0;
     font-size: 32px;
-    margin-bottom: 80px;
     text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
@@ -252,6 +243,7 @@ a:visited {
 
 /* 3.2 - Profile */
 #profile {
+    height: 100%;
     text-shadow: 0px 0px white;
 }
 
@@ -379,8 +371,8 @@ a:visited {
 }
 
 #arrow {
-  position: fixed;
-  bottom: 10px;
+  position: absolute;
+  top: 90%;
   left: 50%;
   margin-left:-20px;
   width: 40px;
