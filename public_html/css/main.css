@@ -48,11 +48,6 @@ body {
 }
 
 /* Headings, paragraphs and strongs */
-h1, h2, h3, p {
-    margin-bottom: 6px;
-    padding: 5px;
-}
-
 h1 {
     font-family: Monoton;
     font-size: 88px;
@@ -67,9 +62,9 @@ h1:hover {
 }
 
 h2 {
-    font-family: Rokkitt, serif;
-    font-weight: 400;
-    font-size: 48px;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 h3 {
@@ -82,27 +77,19 @@ strong {
     font-weight: 700;
 }
 
-/* Navigation bar */
-nav {
+/* Sliding Menus */
+.bar {
+    text-align: center;
+    height: 56px;
     font-size: 16px;
     font-weight: 700;
-    position: fixed;
-    height: 56px;
-    top: 0;
-    z-index: 99;
-    background: rgba(0,0,0,0.8);
+    line-height: 52px;
 }
 
 .slider {
-    font-size: 16px;
-    font-weight: 700;
     position: fixed;
-    height: 56px;
     z-index: 99;
-}
-
-nav p {
-    margin-bottom: 0;
+    
 }
 
 #top_menu {
@@ -110,25 +97,17 @@ nav p {
     top: 0;
 }
 
-#top_menu:hover {
-    left: 0px;
-}
-
 #bottom_menu {
-    right: -564px;
+    left: -564px;
     bottom: 0;
 }
 
-#bottom_menu:hover {
-    right: 0px;
-}
-
-#top_menu, #top_menu .button, #top_menu .square {
+#top_menu, #top_menu .button, #top_menu .square, #bottom_menu, #bottom_menu .button, #bottom_menu .square {
     float: left;
 }
 
-#bottom_menu, #bottom_menu .button, #bottom_menu .square {
-    float: right;
+#top_menu:hover, #bottom_menu:hover {
+    left: 0px;
 }
 
 .s {     
@@ -145,7 +124,7 @@ nav p {
 
 .button {
     height: 56px;
-    line-height: 44px;
+    
     text-align: center;
     background: rgb(8,8,8);
 }
@@ -158,7 +137,6 @@ nav p {
 .square {
     width: 56px;
     height: 56px;
-    line-height: 44px;
     text-align: center;
     background: rgb(240,8,140);
 }
@@ -167,7 +145,7 @@ nav p {
     background: rgb(0,0,0);
 }
 
-.square img {
+#logo img {
     height: 100%;
     width: 100%;
 }
@@ -186,17 +164,20 @@ a:visited {
     color: rgb(255,0,140);
 } 
 
-.shiny {
-    color: rgb(255,255,255);
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff
-}
-
 /*
  *
  * 2.0 - Content Holders
  * 
  */
+.title {
+    background: rgb(0,0,0);
+}
+
+.border {
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgb(240,8,140);
+    -moz-box-shadow: inset 0px -2px 0px 0px rgb(240,8,140);
+    box-shadow: inset 0px -2px 0px 0px rgb(240,8,140);
+}
 
 .wrap {
     margin: 0 auto;
@@ -209,6 +190,12 @@ a:visited {
 .white {
     background: white;
     color: black;
+}
+
+.project {
+    height: 50%;
+    width: 50%;
+    float: left;
 }
 
 /*
@@ -229,87 +216,20 @@ a:visited {
     text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
-.box {
-    text-align: center;
-    margin: 0 8px;
-    width: 88px;
-    padding: 8px;
-}
-
-.box a {
-    color: rgb(255,255,255);
-}
-
 /* 3.2 - Profile */
 #profile {
     height: 100%;
-    text-shadow: 0px 0px white;
-}
-
-#profile .content a:hover {
-    color: #0ce3ac;
-}
-
-#profile img {
-    float: left;
-    margin: 0;
-}
-
-#picture img {
-    height: 100%;
-}
-
-#background #ribbon{
-    text-align: center;
-}
-
-#background .box {
-    display: block;
-    margin: auto;
-    margin-bottom: 2em;
-    width: 50%;
-    font-size: 1.2em;
-}
-
-#background .fa {
-    display: block;
+    clear: both;
 }
 
 #projects {
     height: 100%;
-    overflow: visible;
-    position: relative;
-}
-
-.gap {
-    background: transparent center no-repeat;
-    background-size: cover;
-}
-
-.gap-50 {
-    height:50%;
-}
-
-.gap-100 {
-    height:100%;
+    text-align: center;
 }
 
 /* 3.3 - Skills */
 #skills {
-    padding-top: 100px;
     text-align: center;
-}
-
-#skills table td {
-    vertical-align: top;
-    width: 20%;
-    padding: 2vw;
-    font-size: 0.8em;
-}
-
-.display {
-    max-width: 900px;
-    margin: auto;
 }
 
 .badge {
@@ -341,31 +261,12 @@ a:visited {
     cursor: default;
 }
 
-/* 3.4 - Projects */
-#projects {
-    padding-top: 100px;
-    text-align: center;
-}
-
-#showcase {
-    display: inline-block;
-    max-width: 100%;    
-}
-
-.display {
-    display: inline-block;
-    max-width: 100%;
-}
-
-#projects img {
-    max-width: 500px;
-    max-height: 100%;
-}
 
 /* 3.5 - Contact */
 #contact {
     height: 100%;
     background: url(../img/lattice2.png) repeat;
+    margin: 0 auto -56px;
 }
 
 #contact_list {
@@ -377,9 +278,7 @@ a:visited {
 }
 
 #credit {
-    font-size: 15px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    bottom: 0px;
 }
 
 /*
