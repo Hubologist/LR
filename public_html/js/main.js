@@ -12,7 +12,8 @@ $(document).ready(function() {
       	$("#typed").typed({
 		strings: [
                     "Consistent web design, from concept, to paper, to reality.",
-                    "Content creation, marketing consultancy, web development."
+                    "Content creation, marketing consultancy, web development.",
+                    "Creativity galore."
                 ],
                 startDelay: 1100,
 		typeSpeed: 50,
@@ -40,6 +41,12 @@ $(document).ready(function() {
             easing: "swing"
         });
         return false;
+    });
+
+    $('.thingy').hover(function() {
+        $(this).fadeTo(1,1);
+    },function() {
+        $(this).fadeTo(1,0);
     });
 
     

@@ -199,10 +199,19 @@ a:visited {
     float: left;
 }
 
-.first {
+.featured {
     width: 100%;
 }
 
+.thingy {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.thingy:hover {
+    background: rgba(0,0,0,0.6);
+}
 
 /*
  *
@@ -257,7 +266,7 @@ a:visited {
     color:white;
     font-size: 17px;
     height: 7em;
-    line-height: 6em;
+    line-height: 7em;
     width: 7em;
     text-decoration: none;
     text-align: center;
