@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.splash').addClass('animated fadeInRight');
     
     //Typed sweetness
-    $(function(){
+    $(function() {
       	$("#typed").typed({
 		strings: [
                     "Consistent web design, from concept, to paper, to reality.",
