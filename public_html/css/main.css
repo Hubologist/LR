@@ -199,6 +199,11 @@ a:visited {
     float: left;
 }
 
+.first {
+    width: 100%;
+}
+
+
 /*
  *
  * 3.0 - Page Sections
