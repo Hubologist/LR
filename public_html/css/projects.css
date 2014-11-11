@@ -1,9 +1,10 @@
 #spacemerc {
-    background: url(../img/spacemerc.png) no-repeat top center;
+    background: url(../img/spacemercbw.png) no-repeat top center;
 }
 
 #unfold {
-    background: url(../img/unfold.png) no-repeat top left;
+    background: url(../img/waiting.png) no-repeat top right;
+    background-size: cover;
 }
 
 #proverbial {
