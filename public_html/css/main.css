@@ -196,6 +196,8 @@ a:visited {
     height: 40%;
     width: 100%;
     float: left;
+    background: transparent center no-repeat;
+    background-size :cover;
 }
 
 .thingy {
