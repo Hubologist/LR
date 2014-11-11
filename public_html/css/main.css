@@ -218,6 +218,24 @@ a:visited {
  * 3.0 - Page Sections
  * 
  */
+#page {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#load {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /* 3.1 - Home */
 #home {
