@@ -1,3 +1,4 @@
+//Page loading mechanism
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
     function checkReady() {
@@ -16,7 +17,6 @@ onReady(function () {
     show('page', true);
     show('load', false);
 });
-
 
 $(document).ready(function() {
     //Force reload at top
