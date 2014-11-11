@@ -46,6 +46,50 @@
     </head>  
     <body>
         <div id="load"></div>
+        	<div
+            class="parallax-image-wrapper parallax-image-wrapper-100"
+            data-anchor-target="#spacemerc"
+            data-bottom-top="transform: translate3d(0px, 100%, 0px)"
+            data-top-bottom="transform: translate3d(0px, 0%, 0px)">
+            <div
+                class="parallax-image parallax-image-100"
+                style="background-image:url(img/spacemercbw.png)"
+                data-anchor-target="#spacemerc"
+                data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+                data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+            </div>
+		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+	</div>
+
+	<div
+            class="parallax-image-wrapper parallax-image-wrapper-100"
+            data-anchor-target="#projects + .project"
+            data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+            data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-100"
+			style="background-image:url(img/unfoldlisboa.png)"
+			data-anchor-target="#projects + .project"
+			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#projects + .project + .project"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/proverbial.png)"
+			data-anchor-target="#projects + .project + .project"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
         <div id="page">  
             <div class="smooth slider bar" id="top_menu">
                 <div class="square" id="logo">
@@ -115,7 +159,7 @@
                 <div class="title bar">
                     <h2>#projects</h2>
                 </div>
-                <div class="project" id='spacemerc'>
+                <div class="project" id='spacemerc' style="background-image:url(images/mmarketing.png);">
                     <div class='smooth thingy'>
                         <div class="frame">
                             <h3>Space Merc</h3>
