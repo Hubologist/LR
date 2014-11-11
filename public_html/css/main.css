@@ -236,21 +236,21 @@ a:visited {
  */
 
 .pace .pace-progress {
-  background: rgb(240,8,140);
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 2px;
+    background: rgb(240,8,140);
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 2px;
 
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 .pace-inactive {
-  display: none;
+    display: none;
 }
 
 #page {
@@ -298,13 +298,28 @@ a:visited {
 
 /* 3.2 - Profile */
 #profile {
+    height: 66%;
     clear: both;
 }
 
-#picture {
-    height: 33%;
-    width: 100%;
-    background-image: url(../img/me.jpg);
+#profile_picture {
+    height: 100%;
+    width: 33%;
+    float: left;
+    background: url(../img/me2.png) no-repeat center left;
+    background-size :cover;
+
+}
+
+#profile_text {
+    height: 100%;
+    width: 67%;
+    float: right;
+    background: rgb(255,255,255);
+}
+
+#profile_text p {
+    margin: 16px 0;
 }
 
 #projects {
@@ -313,6 +328,7 @@ a:visited {
 }
 
 #skills {
+    clear: both;
     text-align: center;
 }
 

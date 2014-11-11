@@ -1,5 +1,6 @@
 #spacemerc {
-    background: url(../img/spacemercbw.png) no-repeat top center;
+    background: url(../img/space.png) no-repeat center center;
+    background-size: cover;
 }
 
 #unfold {
