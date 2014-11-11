@@ -87,19 +87,13 @@ $(document).ready(function() {
  * Waypoints
  */
     
-    $('#profile').waypoint(function() {
-        $('.badge').addClass('animated fadeInUp');
-        $('#picture>img').addClass('animated fadeInRight');
-        
+    $('#skills').waypoint(function() {
+        $('.badge').addClass('animated fadeInUp');        
     }, {offset: '20%'});
     
     $('#projects').waypoint(function() {
-        $('.display').addClass('animated fadeInUp');
-    }, {offset: '60%'});
-    
-    $('#contact').waypoint(function() {
-        $('.contact').addClass('animated fadeInUp');
-    }, {offset: '60%'});
+        $('#projects_title').addClass('animated fadeInUp');
+    }, {offset: '100%'});
 
 });
 
