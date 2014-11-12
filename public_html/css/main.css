@@ -218,6 +218,7 @@ a:visited {
 
 .wrap {
     margin: 0;
+    clear: both;
 }
 
 .content {
