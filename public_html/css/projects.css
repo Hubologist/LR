@@ -1,12 +1,14 @@
 #spacemerc {
+    background: url(../img/space.png) fixed no-repeat top center;
     background-size: cover;
 }
 
 #unfold {
-    background: url(../img/waiting.png) no-repeat top right;
+    background: url(../img/waiting.png) fixed no-repeat top right;
     background-size: cover;
 }
 
 #proverbial {
-    background: url(../img/proverbial.png) no-repeat center center;
+    background: url(../img/hue2.png) fixed no-repeat top center;
+    background-size: cover;
 }

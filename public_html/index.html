@@ -48,14 +48,14 @@
         <div id="load"></div>
             <div
                 class="parallax-image-wrapper"
-                data-anchor-target="#spacemerc"
+                data-anchor-target="#contact"
                 data-bottom-top="transform:translate3d(0px, 200%, 0px)"
                 data-top-bottom="transform:translate3d(0px, 0%, 0px)"
                 >
             <div
                 class="parallax-image"
-                style="background-image: url(img/space.png)"
-                data-anchor-target="#spacemerc"
+                style="background-image: url(img/hue.jpg)"
+                data-anchor-target="#contact"
                 data-bottom-top="transform: translate3d(0px, -50%, 0px);"
                 data-top-bottom="transform: translate3d(0px, 50%, 0px);"
                 >       
@@ -115,71 +115,74 @@
                 </div>
             </div>
             <div id="home" class="wrap">
-                <div class="content">    
-                    <h1 class="smooth delay-02s">Light Radius</h1> 
-                    <div class="splash delay-04s">
-                        <p><span id="typed" style="white-space:pre"></span></p>
-                        <p><strong>Activate your online brand</strong>.</p>
-                        <p><a class="smooth" href="#contact"><strong>Get in touch</strong></a>.</p>                       
+                <div class="lattice">
+                    <div class="content">    
+                        <h1 class="smooth delay-02s">Light Radius</h1> 
+                        <div class="splash delay-04s">
+                            <p><span id="typed" style="white-space:pre"></span></p>
+                            <p><strong>Activate your online brand</strong>.</p>
+                            <p><a class="smooth" href="#contact"><strong>Get in touch</strong></a>.</p>                       
+                        </div>
+                        <a class="smooth" href="#projects">
+                            <div id="arrow"></div>
+                        </a>
                     </div>
-                    <a class="smooth" href="#projects">
-                        <div id="arrow"></div>
-                    </a>
                 </div>
             </div>
             <div id="projects" class="wrap">
                 <div class="title bar" id='projects_title'>
                     <h2>#projects</h2>
                 </div>
-                <div class="project" id='spacemerc'>
-                    <div class='smooth thingy'>
-                        <div class="frame">
-                            <h3>Space Merc</h3>
-                            <p><strong>Creator / Developer / Writer</strong></p>
-                            <p>Browser-based text RPG, featuring the SPECIAL system.</p>
-                            <p>Coming soon. I hope.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project" id='unfold'>
-                    <a target='_blank' href='http://unfoldlisboa.com/'>
-                        <div class='smooth thingy'>
-                            <div class="frame">
-                                <h3>Unfold Lisboa</h3>
-                                <p><strong>Copy / Business Developer</strong></p>
-                                <p>Start-up company on tourism and touristic merchandise.</p>
-                                <i class="fa fa-link fa-2x"></i>                                   
-                            </div>      
-                        </div>
-                    </a>
-                </div>
                 <div class="project" id='proverbial'>
                     <a target='_blank' href='http://lightradius.com/proverbial/'>
                         <div class='smooth thingy'>
                             <div class="frame">
                                 <h3>Proverbial</h3>
-                                <p><strong>Creator / Developer</strong></p>
+                                <p><strong>Creator + Developer</strong></p>
                                 <p>Simple web app that gives you a random Portuguese proverb on click.</p>
                                 <i class="fa fa-link fa-2x"></i>                           
                             </div>                     
                         </div>
                     </a>
                 </div>
+                <div class="project" id='unfold'>
+                    <a target='_blank' href='http://unfoldlisboa.com/'>
+                        <div class='smooth thingy'>
+                            <div class="frame">
+                                <h3>Unfold Lisboa</h3>
+                                <p><strong>Business Developer + Copy</strong></p>
+                                <p>Start-up company on tourism and touristic merchandise.</p>
+                                <i class="fa fa-link fa-2x"></i>                                   
+                            </div>      
+                        </div>
+                    </a>
+                </div>
+                <div class="project" id='spacemerc'>
+                    <div class='smooth thingy'>
+                        <div class="frame">
+                            <h3>Space Merc</h3>
+                            <p><strong>Creator + Developer + Writer</strong></p>
+                            <p>Browser-based text RPG, featuring the SPECIAL system.</p>
+                            <p>Coming soon. I hope.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div ></div>
             <div class="wrap" id='profile'>
                 <div class="title bar">
                     <h2>#profile</h2>
                 </div>
-                <div id='profile_picture'></div>
-                <div class="white" id='profile_text'>
-                    <div class="content">                
-                        <p>I create <strong>consistent brand identities online and off</strong>.</p>
-                        <p>Significant multicultural background, both academically and professionally; studied, worked and lived in Portugal, Poland, The Netherlands, Mexico and China. Academically:</p>
-                        <p>_Graduated in Marketing Management.</p>
-                        <p>_Master's Degree in International Business.</p>
-                        <p>You can learn more about me over <a class="smooth" target='_blank' href=https://www.linkedin.com/in/vftiago><strong>here</strong></a>.</p>   
-                        <p>But let's face it. You don't care.</p>
-                    </div>        
+                <div class='content' id='profile_text'>
+                    <a class='smooth' href='#profile'>
+                        <p class='speech'>
+                            <i id='play' class="fa fa-play"></i>
+                            <span id="speech" style="white-space:pre"></span>
+                        </p>
+                    </a>
+                </div>
+                <div id='profile_picture'>
+                    <img alt='My face.' src="img/test.png"/>
                 </div>
             </div>
            
@@ -187,19 +190,21 @@
                 <div class="title bar">
                     <h2>#contact</h2>
                 </div>
-                <div class="content">   
-                    <div class="splash" id="contact_list">
-                        <p><span class="gray">+351</span> 919 961 690</p>
-                    <a class="smooth" href="mailto:hi@lightradius.com " target="_top">
-                        <p>EMAIL</p> 
-                    </a>
-                    <a class="smooth" target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
-                        <p>LINKEDIN</p> 
-                    </a>
-                    <a class="smooth" target="_blank" href="https://github.com/Hubologist">
-                        <p>GITHUB</p> 
-                    </a>
-                    </div>
+                <div class="lattice">
+                    <div class="content">   
+                        <div class="splash" id="contact_list">
+                            <p><span class="gray">+351</span> 919 961 690</p>
+                        <a class="smooth" href="mailto:hi@lightradius.com " target="_top">
+                            <p>EMAIL</p> 
+                        </a>
+                        <a class="smooth" target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
+                            <p>LINKEDIN</p> 
+                        </a>
+                        <a class="smooth" target="_blank" href="https://github.com/Hubologist">
+                            <p>GITHUB</p> 
+                        </a>
+                        </div>
+                    </div>                    
                 </div>
             </div>
             <footer class="title bar" id="credit">

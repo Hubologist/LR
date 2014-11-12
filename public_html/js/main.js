@@ -42,6 +42,8 @@ $(document).ready(function() {
       	});
     });
     
+
+    
     $(window).resize(function() {
   skroll.destroy();
   skroll = skrollr.init({forceHeight: false});
@@ -96,6 +98,26 @@ $(document).ready(function() {
     $('#skills').waypoint(function() {
         $('.badge').addClass('animated fadeInUp');        
     }, {offset: '20%'});
+    
+    $('.speech').click(function() {
+    $(function() {
+        $("#speech").typed({
+                strings: [
+                    "Hello there!",
+                    "My name is Tiago.",
+                    "I make things on the Internet.",
+                    "I graduated in Business.",
+                    "But my heart is with the code.",
+                    "I can make your website too.",
+                    "Get in touch!"
+                ],
+                startDelay: 0,
+                typeSpeed: 50,
+                loop: false
+            });
+        });
+        $("#play").hide();
+    });
     
     $('#projects').waypoint(function() {
         $('#projects_title').addClass('animated fadeInUp');
