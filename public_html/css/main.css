@@ -324,9 +324,9 @@ p.speech {
 	height: 110px;
 	text-align: center;
 	line-height: 100px;
-	background-color: rgb(255,148,200);
+	background-color: rgba(128,128,128,1);
         color: white;
-	border: 8px solid rgb(255,148,200);
+	border: 8px solid rgba(128,128,128,1);
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
@@ -340,7 +340,7 @@ p.speech:before {
 	left: 160px;
 	top: 110px;
 	border: 25px solid;
-	border-color: rgb(255,148,200) transparent transparent rgb(255,148,200);;
+	border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
 }
 
 p.speech:after {
@@ -351,7 +351,7 @@ p.speech:after {
 	left: 168px;
 	top: 110px;
 	border: 15px solid;
-	border-color: rgb(255,148,200) transparent transparent rgb(255,148,200);;
+	border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
 }
 
 .speech a{
@@ -361,40 +361,6 @@ p.speech:after {
 #projects {
     height: 100%;
     text-align: center;
-}
-
-#skills {
-    clear: both;
-    text-align: center;
-}
-
-.badge {
-    position: relative;
-    margin: 8px;
-    
-    -moz-box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
-    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
-    box-shadow: inset 0px 1px 0px 0px rgba(204,204,204,0.3);
-    
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(0,0,0,0.3)), color-stop(1, rgba(0,0,0,0.3)));
-    background: -moz-linear-gradient(center top, rgba(0,0,0,0) 5%, rgba(0,0,0,0.3) 100%);
-    background-color: rgba(33,33,33,0.3);
-    
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 10px;
-    
-    text-indent: 0;
-    display: inline-block;
-    color:white;
-    font-size: 17px;
-    height: 7em;
-    line-height: 7em;
-    width: 7em;
-    text-decoration: none;
-    text-align: center;
-    text-shadow: 1px 1px 0px black;
-    cursor: default;
 }
 
 /* 3.5 - Contact */
@@ -407,10 +373,12 @@ p.speech:after {
 }
 
 #contact_list {
-    margin-top: 96px;
+    margin-top: -56px;
     font-family: "Titillium Web";
     font-weight: 900;
     font-size: 52px;
+    background: rgba(0,0,0,0.5);
+    width: 488px;
 }
 
 #credit {
