@@ -1,4 +1,3 @@
-
 .skrollr-desktop body {
         height:100% !important;
 }
@@ -8,14 +7,6 @@
         left:0;
         width:100%;
         overflow:hidden;
-}
-
-.parallax-image-wrapper-50 {
-        height:50%;
-        top:-50%;
-}
-
-.parallax-image-wrapper-100 {
         height:100%;
         top:-100%;
 }
@@ -29,14 +20,6 @@
         background-repeat:no-repeat;
         background-position:center;
         background-size:cover;
-}
-
-.parallax-image-50 {
-        height:200%;
-        top:-50%;
-}
-
-.parallax-image-100 {
         height:100%;
         top:0;
 }

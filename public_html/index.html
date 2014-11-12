@@ -46,7 +46,23 @@
     </head>  
     <body>
         <div id="load"></div>
-        <div id="page">  
+            <div
+                class="parallax-image-wrapper"
+                data-anchor-target="#spacemerc"
+                data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+                data-top-bottom="transform:translate3d(0px, 0%, 0px)"
+                >
+            <div
+                class="parallax-image"
+                style="background-image: url(img/space.png)"
+                data-anchor-target="#spacemerc"
+                data-bottom-top="transform: translate3d(0px, -50%, 0px);"
+                data-top-bottom="transform: translate3d(0px, 50%, 0px);"
+                >       
+            </div>
+            <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+	</div>
+        <div id="page">
             <div class="smooth slider bar" id="top_menu">
                 <div class="square" id="logo">
                     <img alt="logo" src="img/bulb.png"/>
@@ -165,6 +181,7 @@
                         <p>But let's face it. You don't care.</p>
                     </div>        
                 </div>
+            </div>
             <div id="skills" class="wrap">
                 <div class="title bar">
                     <h2>#skillz</h2>
