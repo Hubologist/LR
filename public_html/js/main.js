@@ -16,7 +16,6 @@ function show(id, value) {
 onReady(function () {
     show('page', true);
     show('load', false);
-    skrollr.get().refresh();
 });
 
 $(document).ready(function() {
@@ -41,13 +40,6 @@ $(document).ready(function() {
                 loop: true
       	});
     });
-    
-
-    
-    $(window).resize(function() {
-  skroll.destroy();
-  skroll = skrollr.init({forceHeight: false});
-});
     
    //Bouncy arrow animation loop
     var $arrow = $('#arrow');

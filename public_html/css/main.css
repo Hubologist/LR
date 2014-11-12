@@ -401,8 +401,6 @@ p.speech:after {
 #contact {
     height: 100%;
     background: url(../img/hue.jpg) no-repeat center right fixed;
-    background: transparent center no-repeat;
-    background-size: cover;
     background-size: cover;
     margin: 0 auto -56px;
     overflow-y: hidden;
