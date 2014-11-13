@@ -99,8 +99,9 @@ $(document).ready(function() {
                     "My name is Tiago.",
                     "I make things on the Internet.",
                     "I graduated in Business.",
-                    "But my heart is with the code.",
-                    "I can make your website too.",
+                    "And I love to write code.",
+                    "I can make your Business Plan.",
+                    "And I can make your website too.",
                     "Get in touch!"
                 ],
                 startDelay: 0,

@@ -20,7 +20,7 @@
 @charset "utf-8";
 
 /*
- * 1.0 - HTML elements Styling
+ * 1.0 - HTML element styling
  */
 
 /* Real estate */
@@ -33,24 +33,19 @@ html, body {
 
 /* Body styling */
 body {
-    /* Not even sure why I use this */
+    /* Not even sure why I use this. Maybe for the sliding bars? */
     overflow-x: hidden;
-    
-    /* Basic font style */
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: rgb(255,255,255);
-
 }
 
 /* Headings, paragraphs and strongs */
 h1 {
+    color: rgb(255,255,255);
+    cursor: default;
     font-family: Monoton;
     font-size: 88px;
 }
 
-h1:hover {
+.shiny:hover {
     color: rgb(255,255,255);
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff,
@@ -58,14 +53,23 @@ h1:hover {
 }
 
 h2 {
+    color: rgb(255,255,255);
+    font-family: 'Lato', Calibri, Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
 }
 
 h3 {
-    font-family: Raleway;
-    font-size: 48px;
+    color: rgb(255,255,255);
+    font-family: Raleway, Calibri, Arial, sans-serif;;
     font-weight: 400;
+    font-size: 48px;
+}
+
+p {
+    color: rgb(255,255,255);
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 300;
 }
 
 strong {
@@ -73,26 +77,23 @@ strong {
 }
 
 /* Link style */
-a:link {
-    text-decoration: none;
-    color: rgb(255,0,140);
-}
-a:visited {
-    color: rgb(255,0,140);
-}
+a:link {text-decoration: none;}
+
+a:link {color: rgb(255,8,140);}
+a:visited {color: rgb(255,8,140);}
 
 /*
  * 2.0 - Loading page: allows for a better landing experience, ensuring background is laready there when the page initally renders
  */
 
-/* Progress bar using the Pace plugin */
+/* Minimalist progress bar using the Pace plugin */
 .pace .pace-progress {
     background: rgb(240,8,140);
+    height: 2px;
+    left: 0;
+    top: 0;
     position: fixed;
     z-index: 2000;
-    top: 0;
-    left: 0;
-    height: 2px;
 
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
@@ -106,16 +107,14 @@ a:visited {
 
 /* Loading page (basically a solid white block) */
 #load {
+    background: rgb(255, 255, 255) no-repeat center;
     display: block;
-    position: absolute;
-    top: 0;
+    height: 100%;
+    width: 100%;
     left: 0;
-    z-index: 999;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-position: center;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
 }
 
 /*
@@ -165,7 +164,7 @@ a:visited {
 }
 
 .gray {
-    color: rgb(128,128,128);
+    color: rgb(255,148,200);
 }
 
 .button {
@@ -176,6 +175,9 @@ a:visited {
 
 .button:hover {
     background: rgb(255,255,255);
+}
+
+.button p:hover {
     color: rgb(0,0,0);
 }
 
@@ -386,6 +388,7 @@ p.speech:after {
     font-size: 52px;
     background: rgba(0,0,0,0.5);
     width: 488px;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
 #credit {
