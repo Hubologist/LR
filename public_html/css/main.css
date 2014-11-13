@@ -42,7 +42,7 @@ h1 {
     color: rgb(255,255,255);
     cursor: default;
     font-family: Monoton;
-    font-size: 88px;
+    font-size: 80px;
 }
 
 .shiny:hover {
@@ -69,6 +69,7 @@ h3 {
 p {
     color: rgb(255,255,255);
     font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -78,9 +79,8 @@ strong {
 
 /* Link style */
 a:link {text-decoration: none;}
-
-a:link {color: rgb(255,8,140);}
-a:visited {color: rgb(255,8,140);}
+a:link {color: rgb(255,148,200);}
+a:visited {color: rgb(255,148,200);}
 
 /*
  * 2.0 - Loading page: allows for a better landing experience, ensuring background is laready there when the page initally renders
@@ -107,7 +107,7 @@ a:visited {color: rgb(255,8,140);}
 
 /* Loading page (basically a solid white block) */
 #load {
-    background: rgb(255, 255, 255) no-repeat center;
+    background: rgb(255,255,255) no-repeat center;
     display: block;
     height: 100%;
     width: 100%;
@@ -117,19 +117,29 @@ a:visited {color: rgb(255,8,140);}
     z-index: 1000;
 }
 
+/* Actual content */
+#page {
+    display: none;
+    height: 100%;
+    width: 100%;   
+    overflow: visible;
+    position: relative;
+}
+
 /*
  * 3.0 - Sliding navigations bars
  */
 
 /* Sliding bar structure */
-.bar {  
+.bar {
     height: 56px;
-    
-    /* Font style */
     line-height: 52px;
-    font-size: 16px;
-    font-weight: 700;
     text-align: center;
+}
+
+.bar p {  
+    height: 56px;
+    font-weight: 700;
 }
 
 .slider {
@@ -147,7 +157,7 @@ a:visited {color: rgb(255,8,140);}
     bottom: 0;
 }
 
-#top_menu, #top_menu .button, #top_menu .square, #bottom_menu, #bottom_menu .button, #bottom_menu .square {
+#top_menu, #bottom_menu, .button, .square {
     float: left;
 }
 
@@ -155,15 +165,15 @@ a:visited {color: rgb(255,8,140);}
     left: 0px;
 }
 
-.s {     
+#top_menu .button {     
     width: 104px;
 }
 
-.m {
+#bottom_menu .button {
     width: 188px;
 }
 
-.gray {
+.country_code {
     color: rgb(255,148,200);
 }
 
@@ -187,6 +197,7 @@ a:visited {color: rgb(255,8,140);}
     height: 56px;
     text-align: center;
     background: rgb(240,8,140);
+    color: rgb(255,255,255);
 }
 
 #logo {
@@ -196,19 +207,6 @@ a:visited {color: rgb(255,8,140);}
 #logo img {
     height: 100%;
     width: 100%;
-}
-
-/*
- * 4.0 - Page sections
- */
-
-/* Div that contains all the content. Doubling as skrollr-body which is necessary for the parallax effect */
-#page {
-    display: none;
-    height: 100%;
-    width: 100%;   
-    overflow: visible;
-    position: relative;
 }
 
 /*
@@ -237,7 +235,6 @@ a:visited {color: rgb(255,8,140);}
     height: 40%;
     width: 100%;
     float: left;
-
 }
 
 .thingy {
@@ -287,20 +284,13 @@ a:visited {color: rgb(255,8,140);}
 
 .splash {
     margin: 40px 0;
-    font-size: 32px;
-    text-shadow: 1px 1px 1px rgb(0,0,0);
+    
 }
 
 .splash p {
     margin-bottom: 16px;
-}
-
-.splash a {
-    color: rgb(255,148,200);
-}
-
-.splash a:hover {
-    color: rgb(255,255,255); 
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
 /* 3.2 - Profile */
@@ -322,9 +312,11 @@ a:visited {color: rgb(255,8,140);}
 
 #profile_text p {
     margin: 16px;
+    font-size: 48px;
 }
 
 p.speech {
+        
 	position: relative;
 	width: 800px;
 	height: 110px;
@@ -366,7 +358,6 @@ p.speech:after {
 
 #projects {
     height: 100%;
-    text-align: center;
 }
 
 /* 3.5 - Contact */
@@ -382,12 +373,15 @@ p.speech:after {
 }
 
 #contact_list {
-    margin-top: -56px;
-    font-family: "Titillium Web";
-    font-weight: 900;
-    font-size: 52px;
+    margin-top: -56px;    
     background: rgba(0,0,0,0.5);
     width: 488px;
+}
+
+#contact_list p{
+    font-family: "Titillium Web";
+    font-size: 52px;
+    font-weight: 900;
     text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
