@@ -42,12 +42,6 @@ h1 {
     font-size: 80px;
 }
 
-.shiny:hover {
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff,
-                 0 0 30px #fff
-}
-
 h2 {
     color: rgb(255,255,255);
     font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -91,7 +85,6 @@ a:hover {color: rgb(255,255,255);}
     top: 0;
     position: fixed;
     z-index: 2000;
-
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -o-transition: width 1s;
@@ -266,7 +259,6 @@ a:hover {color: rgb(255,255,255);}
     background-size: cover;
 }
 
-
 /* 5.2 - Projects */
 #projects {
     height: 100%;
@@ -322,15 +314,8 @@ a:hover {color: rgb(255,255,255);}
  * 6.0 - SFX
  */
 
-/* That sweet, light pink, transparent overlay over each project */
-.thingy {
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background: rgba(255,148,200,0.95);
-    color: rgb(255,255,255);
-}
 
+/* Sometimes things will need to be fixed */
 .fixed {
     position: fixed;
 }
@@ -344,6 +329,22 @@ a:hover {color: rgb(255,255,255);}
 .lattice {
     background: url(../img/lattice2.png) repeat;
     height: 100%;
+}
+
+/* Light aura effect */
+.shiny:hover {
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff
+}
+
+/* That sweet, light pink, transparent overlay over each project */
+.thingy {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(255,148,200,0.95);
+    color: rgb(255,255,255);
 }
 
 /* For content that needs to have black on white */
