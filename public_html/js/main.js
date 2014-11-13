@@ -69,6 +69,13 @@ $(document).ready(function() {
         $(this).fadeTo(1,0);
     });
 
+    $(".troll")
+        .mouseenter(function() {
+            $(this).html("LOL, NOPE!");
+        })
+        .mouseleave(function() {
+            $(this).html("FACEBOOK");
+        });
     
 /*
  * Picture always fits div

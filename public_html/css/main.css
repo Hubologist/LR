@@ -46,7 +46,6 @@ h1 {
 }
 
 .shiny:hover {
-    color: rgb(255,255,255);
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff,
                  0 0 30px #fff
@@ -81,6 +80,7 @@ strong {
 a:link {text-decoration: none;}
 a:link {color: rgb(255,148,200);}
 a:visited {color: rgb(255,148,200);}
+a:hover {color: rgb(255,255,255);}
 
 /*
  * 2.0 - Loading page: allows for a better landing experience, ensuring background is laready there when the page initally renders
@@ -173,8 +173,8 @@ a:visited {color: rgb(255,148,200);}
     width: 188px;
 }
 
-.country_code {
-    color: rgb(255,148,200);
+.highlight {
+    color: rgb(128,128,128);
 }
 
 .button {
@@ -315,46 +315,7 @@ a:visited {color: rgb(255,148,200);}
     font-size: 48px;
 }
 
-p.speech {
-        
-	position: relative;
-	width: 800px;
-	height: 110px;
-	text-align: center;
-	line-height: 100px;
-	background-color: rgba(128,128,128,1);
-        color: white;
-	border: 8px solid rgba(128,128,128,1);
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
 
-p.speech:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 160px;
-	top: 110px;
-	border: 25px solid;
-	border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
-}
-
-p.speech:after {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 168px;
-	top: 110px;
-	border: 15px solid;
-	border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
-}
-
-.speech a{
-    color: white;
-}
 
 #projects {
     height: 100%;
@@ -397,10 +358,10 @@ p.speech:after {
 
 /* Smooth Transitions */
 .smooth {
-    -webkit-transition: all 0.8s ease-in-out; /* Chrome 1-25, Safari 3.2+ */
-    -moz-transition: all 0.8s ease-in-out; /* Firefox 4-15 */
-    -o-transition: all 0.8s ease-in-out; /* Opera */
-    transition: all 0.8s ease-in-out; /* Chrome 26+, Firefox 16+, IE 10+, Opera 12.10+ */
+    -webkit-transition: all 0.4s ease-in-out; /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.4s ease-in-out; /* Firefox 4-15 */
+    -o-transition: all 0.4s ease-in-out; /* Opera */
+    transition: all 0.4s ease-in-out; /* Chrome 26+, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 #arrow {

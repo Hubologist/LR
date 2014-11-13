@@ -30,6 +30,7 @@
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/projects.css" rel="stylesheet">
+        <link href="css/bubble.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
         
         <!-- jQuery -->
@@ -48,7 +49,7 @@
         <div id="page">
             <!-- Top navigation bar -->
             <div class="smooth slider bar" id="top_menu">
-                <a href="#home">
+                <a class="smooth" href="#home">
                     <div class="square" id="logo">
                         <img alt="logo" src="img/bulb.png"/>
                     </div>
@@ -85,11 +86,11 @@
             <!-- Bottom contacts bar -->
             <div class="smooth slider bar" id="bottom_menu">
                 <div class="button">
-                    <p><span class="country_code">+351</span> 919 961 690</p> 
+                    <p><span class="highlight">+351</span> 919 961 690</p> 
                 </div>
                 <a href="mailto:hi@lightradius.com " target="_top">
                     <div class="button">
-                        <p>hi@lightradius.com </p> 
+                        <p>hi<span class="highlight">@lightradius</span>.com </p> 
                     </div>
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
@@ -97,7 +98,7 @@
                         <p>LinkedIn</p> 
                     </div>
                 </a>
-                <a href="#contact">
+                <a class="smooth" href="#contact">
                     <div class="square" id="ctc_drawer">
                         <i class="fa fa-paper-plane fa-2x"></i>
                     </div>
@@ -122,7 +123,7 @@
             <!-- Projects div -->
             <div id="projects" class="wrap">
                 <div class="title bar" id='projects_title'>
-                    <h2>#projects</h2>
+                    <h2>projects</h2>
                 </div>
                 <div class="cover project" id='proverbial'>
                     <a target='_blank' href='http://lightradius.com/proverbial/'>
@@ -162,7 +163,7 @@
             <!-- Profile div -->
             <div class="wrap" id='profile'>
                 <div class="title bar">
-                    <h2>#profile</h2>
+                    <h2>profile</h2>
                 </div>
                 <div class='content' id='profile_text'>
                     <a class='smooth' href='#profile'>
@@ -179,38 +180,50 @@
             <!-- Contacts div -->
             <div id="contact" class="cover wrap">
                 <div class="title bar">
-                    <h2>#contact</h2>
+                    <h2>contact</h2>
                 </div>
                 <div class="lattice">
                     <div class="content">   
                         <div class="content" id="contact_list">
-                            <p><span class="country_code">+351</span> 919 961 690</p>
-                        <a class="smooth" href="mailto:hi@lightradius.com " target="_top">
-                            <p>EMAIL</p> 
-                        </a>
-                        <a class="smooth" target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
-                            <p>LINKEDIN</p> 
-                        </a>
-                        <a class="smooth" target="_blank" href="https://github.com/Hubologist">
-                            <p>GITHUB</p> 
-                        </a>
-                        <a class="smooth" target="_blank" href="http://lightradius.com/404">
-                            <p>FACEBOOK</p> 
-                        </a>
+                            <p>
+                                <span class="highlight">+351</span> 919 961 690
+                            </p>
+                            <p>
+                                <a class="smooth troll" href="#huehuehue">
+                                    FACEBOOK
+                                </a>
+                            </p>
+                            <p>
+                                <a class="smooth" target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
+                                    LINKEDIN
+                                </a>
+                            </p>
+                            <p>
+                                <a class="smooth" target="_blank" href="https://github.com/Hubologist">
+                                    GITHUB
+                                </a>
+                            </p>
+                            <p>
+                                <a class="smooth" href="mailto:hi@lightradius.com " target="_top">
+                                    EMAIL
+                                </a>
+                            </p>
                         </div>
                     </div>                    
                 </div>
             </div>
             <!-- Copyright -->
-            <footer class="title bar" id="credit">
-                &copy; <span id="brand">Light Radius</span>
-                <script type="text/javascript">
-                    now = new Date;
-                    theYear = now.getYear();
-                    if (theYear < 1900) theYear=theYear+1900;
-                    document.write(theYear);
-                </script>
-            </footer>
+            <div class="title bar">
+                <h2>
+                    &copy; <span class="highlight">Light Radius</span>
+                    <script type="text/javascript">
+                        now = new Date;
+                        theYear = now.getYear();
+                        if (theYear < 1900) theYear=theYear+1900;
+                        document.write(theYear);
+                    </script>                    
+                </h2>
+            </div>
         </div>
         <!-- Google Analytics -->
         <script>
