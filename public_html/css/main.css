@@ -1,20 +1,17 @@
 /*
  * Light Radius
  * Author: Tiago Fernandes
- * Version: 3.5
+ * Version: 4.0
  */
 
 /*
  * 1.0 - Overall Styling
  * 2.0 - Loading Page
- * 3.0 - Page Sections
- *      3.1 - Home
- *      3.2 - Profile
- *      3.3 - Skills
- *      3.4 - Projects
- *      3.5 - Contact
- * 4.0 - SFX
- * 5.0 - Media Queries
+ * 3.0 - Sliding bars
+ * 4.0 - Content holders
+ * 5.0 - Page Sections
+ * 6.0 - SFX
+ * 7.0 - Media Queries
  */
 
 @charset "utf-8";
@@ -127,36 +124,10 @@ a:hover {color: rgb(255,255,255);}
 }
 
 /*
- * 3.0 - Sliding navigations bars
+ * 3.0 - Sliding bars
  */
 
-/* Sliding bar structure */
-.bar {
-    height: 56px;
-    line-height: 52px;
-    text-align: center;
-}
-
-.bar p {  
-    height: 56px;
-    font-weight: 700;
-}
-
-.slider {
-    position: fixed;
-    z-index: 99;
-}
-
-#top_menu {
-    left: -576px;
-    top: 0;
-}
-
-#bottom_menu {
-    left: -564px;
-    bottom: 0;
-}
-
+/* Sliding bar structure - NEEDS REFACTORING */
 #top_menu, #bottom_menu, .button, .square {
     float: left;
 }
@@ -165,16 +136,18 @@ a:hover {color: rgb(255,255,255);}
     left: 0px;
 }
 
-#top_menu .button {     
-    width: 104px;
+#top_menu {
+    left: -576px;
+    top: 0;
+    position: fixed;
+    z-index: 99;
 }
 
-#bottom_menu .button {
-    width: 188px;
-}
-
-.highlight {
-    color: rgb(128,128,128);
+#bottom_menu {
+    left: -564px;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
 }
 
 .button {
@@ -191,6 +164,14 @@ a:hover {color: rgb(255,255,255);}
     color: rgb(0,0,0);
 }
 
+#top_menu .button {     
+    width: 104px;
+}
+
+#bottom_menu .button {
+    width: 188px;
+}
+
 .square {
     line-height: 64px;
     width: 56px;
@@ -198,6 +179,17 @@ a:hover {color: rgb(255,255,255);}
     text-align: center;
     background: rgb(240,8,140);
     color: rgb(255,255,255);
+}
+
+.bar {
+    height: 56px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.bar p {  
+    height: 56px;
+    font-weight: 700;
 }
 
 #logo {
@@ -210,25 +202,28 @@ a:hover {color: rgb(255,255,255);}
 }
 
 /*
- * 2.0 - Content Holders
+ * 4.0 - Content Holders
  */
-
-.title {
-    background: rgb(0,0,0);
-}
 
 .wrap {
     margin: 0;
     clear: both;
 }
 
-.content {
-    padding: 56px;
+.title {
+    background: rgb(0,0,0);
+    height: 56px;
+    line-height: 52px;
+    text-align: center;
 }
 
-.white {
-    background: white;
-    color: black;
+.title p {  
+    height: 56px;
+    font-weight: 700;
+}
+
+.content {
+    padding: 56px;
 }
 
 .project {
@@ -237,12 +232,14 @@ a:hover {color: rgb(255,255,255);}
     float: left;
 }
 
-.thingy {
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background: rgba(255,148,200,0.95);
-    color: rgb(255,255,255);
+.splash {
+    margin: 40px 0;
+}
+
+.splash p {
+    margin-bottom: 16px;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
 .frame {
@@ -254,19 +251,11 @@ a:hover {color: rgb(255,255,255);}
     margin: 16px 0;
 }
 
-#projects_title {
-    z-index: 90;
-}
-
-.fixed {
-    position: fixed;
-}
-
 /*
- * 3.0 - Page Sections
+ * 5.0 - Page Sections
  */
 
-/* 3.1 - Home */
+/* 5.1 - Home */
 #home {
     height: 100%;
     /*  */
@@ -277,28 +266,13 @@ a:hover {color: rgb(255,255,255);}
     background-size: cover;
 }
 
-.lattice {
-    background: url(../img/lattice2.png) repeat;
+
+/* 5.2 - Projects */
+#projects {
     height: 100%;
 }
 
-.splash {
-    margin: 40px 0;
-    
-}
-
-.splash p {
-    margin-bottom: 16px;
-    font-size: 32px;
-    text-shadow: 1px 1px 1px rgb(0,0,0);
-}
-
-/* 3.2 - Profile */
-#profile {
-    clear: both;
-    
-}
-
+/* 5.2 - Profile */
 #profile_text {
     width: 100%;
     font-size: 52px;
@@ -315,13 +289,7 @@ a:hover {color: rgb(255,255,255);}
     font-size: 48px;
 }
 
-
-
-#projects {
-    height: 100%;
-}
-
-/* 3.5 - Contact */
+/* 5.5 - Contact */
 #contact {
     height: 100%;
     background: url(../img/hue.jpg) no-repeat center right fixed;
@@ -351,10 +319,38 @@ a:hover {color: rgb(255,255,255);}
 }
 
 /*
- *
- * 4.0 - SFX
- * 
+ * 6.0 - SFX
  */
+
+/* That sweet, light pink, transparent overlay over each project */
+.thingy {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(255,148,200,0.95);
+    color: rgb(255,255,255);
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* Used to emphasize some specific text */
+.highlight {
+    color: rgb(128,128,128);
+}
+
+/* That cute diagonal lattice overlay */
+.lattice {
+    background: url(../img/lattice2.png) repeat;
+    height: 100%;
+}
+
+/* For content that needs to have black on white */
+.white {
+    background: white;
+    color: black;
+}
 
 /* Smooth Transitions */
 .smooth {
@@ -364,6 +360,7 @@ a:hover {color: rgb(255,255,255);}
     transition: all 0.4s ease-in-out; /* Chrome 26+, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
+/* The bouncing arrow */
 #arrow {
     position: absolute;
     top: 100%;
@@ -377,42 +374,42 @@ a:hover {color: rgb(255,255,255);}
 }
 
 @-webkit-keyframes bounce {
-    0%       { bottom:5px; }
-    25%, 75% { bottom:15px; }
-    50%      { bottom:20px; }
+    0%       {bottom:5px;}
+    25%, 75% {bottom:15px;}
+    50%      {bottom:20px;}
     100%     {bottom:0;}
 }
 
-/* Fades */
+/* Fades? */
 .fade-in {
     position: relative;
     top: 0;
 }
 
+/* Items that I want to have faded in */
 .badge, .display, .contact {
     visibility: hidden;
 }
 
+/* Making invisible elements visible at the time of animation */
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
     visibility: visible;
 }
 
-.delay-01s {animation-delay: 0.1s; -webkit-animation-delay: 0.1s;}
-.delay-02s {animation-delay: 0.2s; -webkit-animation-delay: 0.2s;}
-.delay-03s {animation-delay: 0.3s; -webkit-animation-delay: 0.3s;}
-.delay-04s {animation-delay: 0.4s; -webkit-animation-delay: 0.4s;}
-.delay-05s {animation-delay: 0.5s; -webkit-animation-delay: 0.5s;}
-.delay-06s {animation-delay: 0.6s; -webkit-animation-delay: 0.6s;}
-.delay-07s {animation-delay: 0.7s; -webkit-animation-delay: 0.7s;}
-.delay-08s {animation-delay: 0.8s; -webkit-animation-delay: 0.8s;}
-.delay-09s {animation-delay: 0.9s; -webkit-animation-delay: 0.9s;}
-.delay-1s {animation-delay: 1s; -webkit-animation-delay: 1s;}
-.delay-15s {animation-delay: 1.5s; -webkit-animation-delay: 1.5s;}
+.delay01 {animation-delay: 0.1s; -webkit-animation-delay: 0.1s;}
+.delay02 {animation-delay: 0.2s; -webkit-animation-delay: 0.2s;}
+.delay03 {animation-delay: 0.3s; -webkit-animation-delay: 0.3s;}
+.delay04 {animation-delay: 0.4s; -webkit-animation-delay: 0.4s;}
+.delay05 {animation-delay: 0.5s; -webkit-animation-delay: 0.5s;}
+.delay06 {animation-delay: 0.6s; -webkit-animation-delay: 0.6s;}
+.delay07 {animation-delay: 0.7s; -webkit-animation-delay: 0.7s;}
+.delay08 {animation-delay: 0.8s; -webkit-animation-delay: 0.8s;}
+.delay09 {animation-delay: 0.9s; -webkit-animation-delay: 0.9s;}
+.delay10 {animation-delay: 1s;   -webkit-animation-delay: 1s;  }
+.delay15 {animation-delay: 1.5s; -webkit-animation-delay: 1.5s;}
 
 /*
- *
- * 5.0 - MEDIA QUERIES
- * 
+ * 7.0 - MEDIA QUERIES
  */
 
 /* Height */
