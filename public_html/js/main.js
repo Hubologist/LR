@@ -112,7 +112,6 @@ $(document).ready(function() {
     });
     
     $('#projects').waypoint(function() {
-        $('#projects_title').addClass('animated fadeInUp');
     }, {offset: '100%'});
 
 });
