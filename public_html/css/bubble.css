@@ -1,8 +1,8 @@
 p.speech {    
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 300;
     position: relative;
-    max-width: 100%;
+    width: 800px;
     height: 110px;
     text-align: center;
     line-height: 100px;

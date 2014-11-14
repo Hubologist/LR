@@ -31,14 +31,14 @@ $(window).load(function() {
     //Typed sweetness
     $(function() {
       	$("#intro").typed({
-		strings: [
-                    "Consistent web design, from concept, to paper, to reality.",
-                    "Content creation, marketing consultancy, web development.",
-                    "Creativity galore."
-                ],
-                startDelay: 1100,
-		typeSpeed: 50,
-                loop: true
+            strings: [
+                "Consistent web design, from concept, to paper, to reality.",
+                "Content creation, marketing consultancy, web development.",
+                "Creativity galore."
+            ],
+            startDelay: 1100,
+            typeSpeed: 50,
+            loop: true
       	});
     });
     
@@ -64,6 +64,8 @@ $(window).load(function() {
         return false;
     });
 
+/* Cool effects */
+
     $('.thingy').hover(function() {
         $(this).fadeTo(1,1);
     },function() {
@@ -78,26 +80,12 @@ $(window).load(function() {
             $(this).html("FACEBOOK");
         });
     
-/*
- * Picture always fits div
- */
-    
-    $('#profile_pic > img').load(function(){
-        // maxWidth, maxHeight, maintain aspect ratio
-        $(this).tailorfit({
-                maxWidth  : this.width,
-                maxHeight : this.height,
-                ratio     : this.width / this.height
-        });
-    });
-    
-/*
- * Waypoints
- */
+/* Typed speech bubble */
     
     $('.speech').click(function() {
-    $(function() {
-        $("#result").typed({
+        $(function() {
+            $("#greet").hide();
+            $("#result").typed({
                 strings: [
                     "Hello there!",
                     "My name is Tiago.",
@@ -112,12 +100,20 @@ $(window).load(function() {
                 typeSpeed: 50,
                 loop: false
             });
-        });
-        $("#play").hide();
+        });    
     });
     
+/*
+ * Waypoints
+ */
+
     $('#projects').waypoint(function() {
+        $('#projects_title').toggleClass("fixed");
     }, {offset: '100%'});
+    
+
+    
+
 
 });
 

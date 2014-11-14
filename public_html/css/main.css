@@ -207,8 +207,10 @@ a:hover {color: rgb(255,255,255);}
 .title {
     background: rgb(0,0,0);
     height: 56px;
+    width: 100%;
     line-height: 52px;
     text-align: center;
+    z-index: 88;
 }
 
 .title p {  
@@ -288,9 +290,10 @@ a:hover {color: rgb(255,255,255);}
     font-size: 32px;
     margin: 8px 0;
     font-weight: 700;
+    cursor: default;
 }
 #dialogue p:hover {
-    color: rgb(240,8,140);
+    color: rgb(255,255,255);
 }
 
 /* 5.5 - Contact */
