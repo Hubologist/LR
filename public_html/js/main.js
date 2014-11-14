@@ -18,7 +18,7 @@ onReady(function () {
     show('load', false);
 });
 
-$(document).ready(function() {
+$(window).load(function() {
     //Force reload at top
     //$(this).scrollTop(0);
     
