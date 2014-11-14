@@ -26,10 +26,11 @@ $(window).load(function() {
     $('.box').addClass('animated fadeInUp');
     $('h1').addClass('animated fadeInLeft');
     $('.splash').addClass('animated fadeInRight');
+    $('.square').addClass('animated fadeInLeft');
     
     //Typed sweetness
     $(function() {
-      	$("#typed").typed({
+      	$("#intro").typed({
 		strings: [
                     "Consistent web design, from concept, to paper, to reality.",
                     "Content creation, marketing consultancy, web development.",
@@ -94,13 +95,9 @@ $(window).load(function() {
  * Waypoints
  */
     
-    $('#skills').waypoint(function() {
-        $('.badge').addClass('animated fadeInUp');        
-    }, {offset: '20%'});
-    
     $('.speech').click(function() {
     $(function() {
-        $("#speech").typed({
+        $("#result").typed({
                 strings: [
                     "Hello there!",
                     "My name is Tiago.",
