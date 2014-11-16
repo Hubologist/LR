@@ -84,7 +84,7 @@ strong {
 /* For tiny screens */
 @media screen and (min-width: 240px) {
     /* Dump all on a small screen */
-    #page, #home, #projects, #profile, #contact, #top_menu, #bottom_menu, #credit {
+    #page, #home, #arrow, #projects, #profile, #contact, #top_menu, #bottom_menu, #credit {
         display: none;
     }
     
@@ -154,7 +154,7 @@ strong {
 }
 
 /* For larger screens */
-@media screen and (min-width: 768px) {   
+@media screen and (min-width: 768px) {
     #mobile{
         display: none;
     }
@@ -519,6 +519,10 @@ strong {
 @media screen and (min-width: 944px) {
     #home {
         height: 100%;
+    }
+    
+    #arrow {
+        display: block;
     }
     
     h1 {
