@@ -18,6 +18,10 @@ onReady(function () {
     show('load', false);
 });
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $(".thingy").fadeTo(1,1);
+}
+
 $(window).load(function() {
     //Force reload at top
     //$(this).scrollTop(0);
@@ -130,10 +134,6 @@ $(window).load(function() {
     $('#projects').waypoint(function() {
         $('#projects_title').toggleClass("fixed");
     }, {offset: '100%'});
-    
-
-    
-
 
 });
 
