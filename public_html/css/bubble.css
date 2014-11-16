@@ -1,11 +1,12 @@
 p.speech {    
-    font-size: 50px;
+    font-size: 32px;
+    width: 90%;
+    margin: 0 auto;
     font-weight: 300;
     position: relative;
-    width: 800px;
-    height: 110px;
+    height: 100px;
     text-align: center;
-    line-height: 100px;
+    line-height: 90px;
     background-color: rgba(128,128,128,1);
     color: white;
     border: 8px solid rgba(128,128,128,1);
@@ -20,7 +21,7 @@ p.speech:before {
     width: 0;
     height: 0;
     left: 160px;
-    top: 110px;
+    top: 100px;
     border: 25px solid;
     border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
 }
@@ -31,7 +32,7 @@ p.speech:after {
     width: 0;
     height: 0;
     left: 168px;
-    top: 110px;
+    top: 100px;
     border: 15px solid;
     border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
 }
@@ -39,3 +40,44 @@ p.speech:after {
 .speech a{
     color: white;
 }
+
+@media screen and (min-width: 768px) {
+    p.speech {    
+        font-size: 32px;
+        width: 600px;
+        font-weight: 300;
+        position: relative;
+        height: 110px;
+        text-align: center;
+        line-height: 100px;
+        background-color: rgba(128,128,128,1);
+        color: white;
+        border: 8px solid rgba(128,128,128,1);
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+
+    p.speech:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 160px;
+        top: 110px;
+        border: 25px solid;
+        border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1);
+    }
+
+    p.speech:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 168px;
+        top: 110px;
+        border: 15px solid;
+        border-color: rgba(128,128,128,1) transparent transparent rgba(128,128,128,1); 
+    }
+}
+

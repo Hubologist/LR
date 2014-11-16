@@ -47,6 +47,46 @@
         <script src="js/main.js"></script>    
     </head>  
     <body>
+        <div id="mobile">
+            <div id="m_title">
+                <h1>Light Radius</h1>
+            </div>
+            <div id="m_speech">
+                <a class='smooth' href='#mobile'>
+                    <p class='speech' id="m_bubble">
+                        <span id="m_greet">Oh hi there.</span>
+                        <span id="m_result" style="white-space:pre"></span>
+                    </p>
+                </a>
+                <div id='m_picture'>
+                    <img alt='My face.' src="img/face.png"/>
+                </div>    
+            </div>
+            <div id="m_contact">
+                <div class="lattice">
+                    <div class="content">
+                        <p>
+                            <span class="highlight">+351</span> <strong>919 961 690</strong>
+                        </p>
+                        <p>
+                            <a class="smooth" target="_blank" href="https://www.linkedin.com/profile/view?id=33880107&trk=spm_pic">
+                                <strong>LINKEDIN</strong>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="smooth" target="_blank" href="https://github.com/Hubologist">
+                                 <strong>GITHUB</strong>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="smooth" href="mailto:hi@lightradius.com " target="_top">
+                                 <strong>EMAIL</strong>
+                            </a>
+                        </p> 
+                    </div>                   
+                </div>
+            </div>
+        </div>
         <!-- Blank loading page, showing alongside Pace's progress bar -->
         <div id="load"></div>
         <!-- The actual content. This needs to be switched "on and off" with javascript -->
@@ -214,7 +254,7 @@
                 </div>
             </div>
             <!-- Copyright -->
-            <div class="title bar">
+            <div class="title bar" id="credit">
                 <h2>
                     &copy; <span class="highlight">Light Radius</span>
                     <script type="text/javascript">

@@ -81,6 +81,26 @@ $(window).load(function() {
         });
     
 /* Typed speech bubble */
+    $('#m_bubble').click(function() {
+        $(function() {
+            $("#m_greet").hide();
+            $("#m_result").typed({
+                strings: [
+                    "Hello there!",
+                    "My name is Tiago.",
+                    "I make things on the Internet.",
+                    "I graduated in Business.",
+                    "And I love to write code.",
+                    "I can make your Business Plan.",
+                    "And I can make your website too.",
+                    "Get in touch!"
+                ],
+                startDelay: 0,
+                typeSpeed: 50,
+                loop: false
+            });
+        });    
+    });
     
     $('.speech').click(function() {
         $(function() {
