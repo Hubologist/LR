@@ -88,6 +88,7 @@
     p.speech {    
         font-size: 32px;
         width: 600px;
+        margin: 0;
         font-weight: 300;
         position: relative;
         height: 110px;
