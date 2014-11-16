@@ -159,7 +159,7 @@ strong {
         display: none;
     }
     
-    #page, #home, #projects, #profile, #contact, #top_menu, #bottom_menu {
+    #page, #home, #projects, #profile, #contact, #top_menu, #bottom_menu, #credit {
         display: block;
     }
     
@@ -391,7 +391,7 @@ strong {
 
     /* 5.5 - Contact */
     #contact {
-        height: 100%;
+        height: 666px;
         background: url(../img/contact.jpg) no-repeat center right fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -517,7 +517,7 @@ strong {
 
 /* For decent screens (laptops/desktops hopefully) */
 @media screen and (min-width: 944px) {
-    #home {
+    #home, #contact {
         height: 100%;
     }
     
