@@ -77,6 +77,10 @@ strong {
     padding: 56px;
 }
 
+.m_content {
+    padding: 24px;
+}
+
 /* For tiny screens */
 @media screen and (min-width: 240px) {
     /* Dump all on a small screen */
@@ -92,18 +96,13 @@ strong {
         width: 100%;
     }
     
-    #m_title {
-        height: 48px;
-        text-align: center;
-        background: rgb(8,8,8);
+    #m_title, #m_footer {
+        background: rgb(24,24,24);
         margin-bottom: 8px;
         padding: 16px;
     }
     
     h1 {
-        color: rgb(255,255,255);
-        cursor: default;
-        font-family: Monoton;
         font-size: 40px;
     }
     
@@ -135,27 +134,8 @@ strong {
         display: none;
     }
     
-    /* Use this instead */
-    #mobile{
-        display: block;
-        background: rgb(255,255,255);
-        height: 100%;
-        width: 100%;
-    }
-    
-    #m_title {
-        height: 56px;
-        text-align: center;
-        background: rgb(8,8,8);
-        margin-bottom: 8px;
-        padding: 16px;
-    }
-    
     h1 {
-        color: rgb(255,255,255);
-        cursor: default;
-        font-family: Monoton;
-        font-size: 52px;
+        font-size: 48px;
     }
     
     #m_picture {
@@ -168,14 +148,8 @@ strong {
        width: 400px;
     }
     
-    #m_contact {
-        background: rgb(64,64,64);
-    }
-    
     #m_contact p{
         font-size: 32px;
-        font-family: "Titillium Web";
-        margin-bottom: 8px;
     }
 }
 
@@ -191,6 +165,10 @@ strong {
     
     body {
         overflow-x: hidden;
+    }
+    
+    h1 {
+        font-size: 64px;
     }
 
     /*
