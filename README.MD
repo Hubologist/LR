@@ -1,6 +1,6 @@
-<h1>LIGHT RADIUS</h1>
-<h2>personal portfolio website</h2>
-<h3>TODO</h3>
+<h1>Light Radius</h1>
+<h2>Personal portfolio website</h2>
+<h3>Todo</h3>
 
 <p>Rethink projects section: transparent overalys on hover don't really work on tablets.</p>
 <p>Rethink copy. People seem to think that lightradius is actually some sort of lighting solutions company (Eletrik webdesign company is a great example of copy done right).</p>
@@ -12,7 +12,7 @@
 <p>Try to have projects section work with skrollr.</p>
 <p>Optimize html/css.</p>
 
-<h3>FUTURE</h3>
+<h3>Future</h3>
 
 <p>Divide projects section into Boostrap projects, Ember projects and PHP projects (maybe marketing projects?).</p>
 <p>Rename it 'portfolio' instead of projects.</p>
