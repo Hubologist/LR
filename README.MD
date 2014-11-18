@@ -12,7 +12,7 @@
 <p>Try to have projects section work with skrollr.</p>
 <p>Optimize html/css.</p>
 
-<h3>FUTURE</33>
+<h3>FUTURE</h3>
 
 <p>Divide projects section into Boostrap projects, Ember projects and PHP projects (maybe marketing projects?).</p>
 <p>Rename it 'portfolio' instead of projects.</p>
